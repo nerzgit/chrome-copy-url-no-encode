@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "日本語URLコピー",
+    "description": "URLを日本語のままコピーします。chromeの拡張機能のショートカットキー設定で好きなキーを設定してください。",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "clipboardWrite",
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "commands": {
+        "copy-japanese-url": {
+            "description": "日本語URLをコピー"
+        }
+    }
+}
